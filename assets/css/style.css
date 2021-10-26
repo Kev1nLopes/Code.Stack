@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+    transition: 0.5s ease-in-out;
+}
+
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    
+
+}
+.header{
+    height: 125px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #FFCC00;
+    z-index: 1;
+    top: 0;
+}
+.header--content{
+    display: flex;
+    padding-left: 25px 30px;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.header--content .header-logo img{
+    width: 160px;
+    margin: 0px 0px 0px 10px
+}
+
+nav.header-menu ul{
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+}
+nav.header-menu ul li{
+    height: 100%;
+    padding: 8px;
+    color: black;
+}
+nav.header-menu ul i.fas{
+    width: 30px;
+
+}
+
+
+/* Main */
+
+/* Slider */
+section.section--main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 640px;
+}
+section .slider--content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 439px;
+
+    cursor: pointer;
+}
+section .search--area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search--area-content{
+    width: inherit;
+    height: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search--area-box{
+    width: 1340px;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+
+}
+.search--area-box form{
+    width: inherit;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;   
+    gap: 10px;
+}
+.form-btns{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.form-btns label{
+    flex: 1;
+    border: 1px solid blue;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.form-btns label.selected{
+    background-color: blue;
+    color: white;
+}
+.form-btns label:hover{
+    background-color: blue;
+    color: white;
+}
+.form-btns label:nth-child(1){
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.form-btns label:nth-child(2){
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.auxInputCity{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.auxInputCity input{
+    outline: none;
+    border: none;
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+    border: 1px solid gray;
+    
+    
+}
+.auxInputCity input::placeholder{
+    padding-left: 10px;
+}
+.auxInputCity i.fas{
+    position: absolute;
+    right: 0;
+    right: 10px;
+    color: gray;
+    
+}
+.auxInputType {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.auxInputType input{
+    outline: none;
+    border: none;
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.auxInputType input::placeholder{
+    padding-left: 10px;
+}
+.auxInputType i.fas{
+    color: gray;
+    position: absolute;
+    right: 10px;
+}
+.search--area-content a{
+    color: blue;
+    cursor: pointer;
+    margin-top: 30px;
+}
+form button{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
