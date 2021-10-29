@@ -3,7 +3,12 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+  
 }
+:root{
+    font-size: 62.5%;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -12,7 +17,11 @@ a:hover{
     color: blue;
     transition: 0.5s ease-in-out;
 }
-
+.bar{
+    width:inherit;
+    height: 3px;
+    background-color: #FFCC00;
+}
 
 .container{
     max-width: 1400px;
@@ -53,14 +62,53 @@ nav.header-menu ul{
     height: 100%;
 }
 nav.header-menu ul li{
-    height: 100%;
     padding: 8px;
+    font-size: 1.6rem;
     color: black;
 }
 nav.header-menu ul i.fas{
     width: 30px;
 
 }
+li#services{
+    position: relative;
+}
+nav#sub-services{
+    max-width: 264px;
+    min-width: 250px;
+    display: none;
+    
+  
+    
+}
+li#services:hover nav#sub-services{
+    background-color: white;
+    display: block;
+    max-height: 230px;
+    min-height: 220px;
+    position: absolute;
+    border-bottom: 3px solid #FFCC00 ;
+}
+nav#sub-services ul{
+    display: block;
+    margin-top: 8%;
+    
+}
+nav#sub-services li,
+nav#sub-services li a{
+    letter-spacing: -1px;
+    word-spacing: 1px;
+    font-size: 1.6rem;
+    
+}
+nav#sub-services li:hover,
+nav#sub-services li:hover a{
+    color: blue;
+    transition: 0.5s ease-in-out;
+    
+}
+
+    
 
 
 /* Main */
@@ -103,14 +151,16 @@ section .search--area{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    box-shadow: 0 0 1em black;
 
 
 }
 .search--area-box form{
     width: inherit;
     padding: 20px;
+    
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 1fr;   
+    grid-template-columns: 4fr 3fr 2fr 2fr;   
     gap: 10px;
 }
 .form-btns{
@@ -121,8 +171,10 @@ section .search--area{
 .form-btns label{
     flex: 1;
     border: 1px solid blue;
-    padding: 5px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
     cursor: pointer;
 }
 .form-btns label.selected{
@@ -143,66 +195,70 @@ section .search--area{
 }
 .auxInputCity{
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: white;
     position: relative;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     
 }
 .auxInputCity input{
-    outline: none;
-    border: none;
-    width: inherit;
-    height: inherit;
-    border-radius: 5px;
-    border: 1px solid gray;
-    
-    
+    width: 100%;
+    height: 40px;
 }
-.auxInputCity input::placeholder{
-    padding-left: 10px;
+.auxInputCity input::-webkit-calendar-picker-indicator {
+    display: none;
+ } 
+.auxInputCity datalist#list{
+    background-color: white;
+    width: 30px;
 }
-.auxInputCity i.fas{
+.auxInputCity datalist option{
+    background-color: white;
+    width: 30px;
+}
+ 
+
+.auxInputCity select option:hover{
+    background-color: blue;
+}
+
+i.fas.fa-chevron-down{
     position: absolute;
-    right: 0;
+    z-index: 99;
     right: 10px;
     color: gray;
-    
 }
 .auxInputType {
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: white;
     position: relative;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     
 }
 .auxInputType input{
-    outline: none;
-    border: none;
-    width: inherit;
-    height: inherit;
-    border-radius: 5px;
-    border: 1px solid gray;
+    width: 100%;
+    height: 40px;
 }
-.auxInputType input::placeholder{
-    padding-left: 10px;
-}
-.auxInputType i.fas{
-    color: gray;
-    position: absolute;
-    right: 10px;
-}
+.auxInputType input::-webkit-calendar-picker-indicator {
+   display: none;
+} 
+
+
+
 .search--area-content a{
     color: blue;
     cursor: pointer;
     margin-top: 30px;
 }
 form button{
+    height: 40px;
     background-color: blue;
     color: white;
     font-weight: bold;
@@ -212,3 +268,299 @@ form button{
 }
 
 
+/* Imoveis a Venda */
+
+section.sellEstate{
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    padding: 0 60px;
+}
+
+.sellEstate--title-area{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.sellEstate--title{
+   max-width: 212px;
+   width: 100%;
+
+}
+.sellEstate--title h2{
+    width: inherit;
+    font-size: 2.3rem;
+    padding: 0 0 5px 0;
+}
+.sellEstate--title .bar{
+    width: inherit;
+}
+
+.sellEstate--title-area a{
+    font-size: 1.8rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.sellEstate--title-area a:hover{
+    font-size: 1.8rem;
+    background-color: blue;
+    color: white;
+    transition: 0.5 ease-in-out;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.estates--content{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+    gap: 30px;
+}
+.estate{
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1.6rem;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 1em black;
+    
+
+}
+.estate:hover{
+    transform: scale(1.03) ;
+    transition: 0.5s;
+}
+.estate img{
+    width: inherit;
+    max-height: 220px;
+    min-height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-position: center top;
+
+}
+.estate .tipo{
+    max-width: 43%;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    padding: 3px 10px;
+    background-color: blue;
+    border-bottom-right-radius: 5px ;
+    border-top-right-radius: 5px ;
+    color: white;
+ 
+}
+.estate .mobiliado{
+    max-width: 43%;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    margin: 10px 0;
+    padding: 3px 10px;
+    background-color: #FFCC00 ;
+    border-bottom-right-radius: 5px ;
+    border-top-right-radius: 5px ;
+    color: white;
+}
+.estate .estado{
+    position: absolute;
+    top: 35%;
+    padding: 3px;
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+.estate-content{
+    margin-top: 20px ;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.estate-content .localidade{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.estate-content .descricao{
+    text-align: start;
+}
+.obs-estate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.estateBar{
+    height: 1px;
+    background-color: gray;
+    width: 70%;
+    margin: 10px 0;
+}
+.obs-estate-content{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.obs-estate-content i.fas{
+    margin: 0 5px;
+}
+.price{
+    align-self: flex-start;
+    font-size: 18px;
+    
+}
+.priceAmount{
+    align-self: flex-start;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+
+.rentEstate--title-area{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.rentEstate--title-area a{
+    font-size: 1.8rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.rentEstate--title-area a:hover{
+    font-size: 1.8rem;
+    background-color: blue;
+    color: white;
+    transition: 0.5 ease-in-out;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.rentEstate--title h2{
+    font-size: 2.3rem;
+}
+
+.rent--content{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+    gap: 30px;
+}
+
+.rent{
+    max-width: 350px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1.6rem;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 1em black;
+    
+
+}
+.rent:hover{
+    transform: scale(1.03) ;
+    transition: 0.5s;
+}
+.rent img{
+    width: inherit;
+    max-height: 220px;
+    min-height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-position: center top;
+
+}
+.rent .tipo{
+    max-width: 43%;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    padding: 3px 10px;
+    background-color: blue;
+    border-bottom-right-radius: 5px ;
+    border-top-right-radius: 5px ;
+    color: white;
+ 
+}
+.rent .mobiliado{
+    max-width: 43%;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    margin: 10px 0;
+    padding: 3px 10px;
+    background-color: #FFCC00 ;
+    border-bottom-right-radius: 5px ;
+    border-top-right-radius: 5px ;
+    color: white;
+}
+.rent .estado{
+    position: absolute;
+    top: 35%;
+    padding: 3px;
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+.rent-content{
+    margin-top: 20px ;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.rent-content .localidade{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.rent-content .descricao{
+    text-align: start;
+}
+.obs-rent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rentBar{
+    height: 1px;
+    background-color: gray;
+    width: 70%;
+    margin: 10px 0;
+}
+.obs-rent-content{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.obs-rent-content i.fas{
+    margin: 0 5px;
+}
+.rent .price{
+    align-self: flex-start;
+    font-size: 18px;
+    
+}
+.rent .priceAmount{
+    align-self: flex-start;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.model{
+    display: none;
+}

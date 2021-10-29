@@ -15,6 +15,7 @@
 
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/d50e3b900c.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     
@@ -30,7 +31,18 @@
                             <li><a href="#">Início</a></li>
                             <li><a href="#">Comprar</a></li>
                             <li><a href="#">Alugar</a></li>
-                            <li><a href="#">Serviços</a></li>
+                            <li id="services"><a href="#">Serviços</a>
+                                <nav id="sub-services">
+                                    <ul >
+                                        <li><a href="#">Solicite seu imovel</a></li>
+                                        <li><a href="#">Anuncie seu imovel</a></li>
+                                        <li><a href="#">Como Negociar seu imovel</a></li>
+                                        <li><a href="#">Minha Lajeado</a></li>
+                                        <li><a href="#">Aluguel online</a></li>
+                                        <li><a href="#">Simulação de financionamento</a></li>
+                                    </ul>
+                                </nav>
+                            </li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Institucional</a></li>
                             <li><a href="#">Contato</a></li>
@@ -55,8 +67,25 @@
                                 <label for="sell" id="sell" class="selected">Venda</label>
                                 <label for="location" id="location">Locação</label>
                             </div>
-                            <div class="auxInputCity"><input type="text" name="inputCity" id="inputCity" placeholder="Cidade"><i class="fas fa-chevron-down"></i></div>
-                            <div class="auxInputType"><input type="text" name="inputType" id="inputType" placeholder="Tipo"><i class="fas fa-chevron-down"></i></div>
+                            <div class="auxInputCity">
+                                <i class="fas fa-chevron-down"></i>
+                                <input  autocomplete="off" list="cidades" placeholder="Cidade:">
+                                <datalist id="citys" role="listbox" list="cidades">
+                                    <option value="">Cidade 1</option>
+                                    <option value="">Cidade 2</option>
+                                    <option value="">Cidade 3</option>
+                                    <option value="">Cidade 4</option>
+                                </datalist>
+                                
+                            </div>
+                            <div class="auxInputType">
+                                <i class="fas fa-chevron-down"></i>
+                                
+                                <input type="text" list="opções" placeholder="Tipo">
+                                    <datalist id="opções">
+                                       
+                                    </datalist>
+                            </div>
                             <button type="submit" value="Buscar">Buscar</button>
                             
                                
@@ -69,7 +98,81 @@
 
         </section>
 
-        <section ></section>
+        <section class="sellEstate">
+            <div class="sellEstate--content container">
+                <div class="sellEstate--title-area">
+                    <div class="sellEstate--title">
+                        <h2>Imóveis à Venda
+                        <div class="bar"></div>
+                        </h2>
+                    </div>
+                    <a href="#">Ver mais</a>
+                    
+                </div>
+                <div class="estates--content">
+                    <div class="estate model" id="estate" >
+                        <img src="assets/img/imovel1.jpg" alt="imovel1">
+                        <div class="tipo">Apartamento</div>
+                        <div class="mobiliado"></div>
+                        <div class="estado">RS - Lajeado</div>
+                        <div class="estate-content">
+                            <div class="localidade">Sao Cristovao</div>
+                            <p class="descricao">São Cristóvão: o imóvel ideal para quem deseja morar e investir. Localizado em área nobre da cidade... </p>
+                            <div class="obs-estate">
+                                <div class="estateBar"></div>
+                                <div class="obs-estate-content">
+                                    <div id="qtBed"><span>3</span> <i class="fas fa-bed"></i></div>
+                                    <div id="qtBath"><span>3</span><i class="fas fa-bath"></i></div>
+                                    <div id="qtGarage"><span>3</span><i class="fas fa-car"></i></div>
+                                </div>
+                                <div class="estateBar"></div>
+                               
+                            </div>
+                            <div class="price">Venda:</div>
+                            <div class="priceAmount">R$ </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rentEstate--title-area">
+                    <div class="rentEstate--title">
+                        <h2>Imóveis para Alugar
+                        <div class="bar"></div>
+                        </h2>
+                    </div>
+                    <a href="#">Ver mais</a>
+                    
+                </div>
+                <div class="rent--content">
+                    <div class="rent model" id="rent" >
+                        <img src="assets/img/imovel1.jpg" alt="imovel1">
+                        <div class="tipo">Apartamento</div>
+                        <div class="mobiliado">Mobiliado</div>
+                        <div class="estado">RS - Lajeado</div>
+                        <div class="rent-content">
+                            <div class="localidade">Sao Cristovao</div>
+                            <p class="descricao">São Cristóvão: o imóvel ideal para quem deseja morar e investir. Localizado em área nobre da cidade... </p>
+                            <div class="obs-estate">
+                                <div class="estateBar"></div>
+                                <div class="obs-estate-content">
+                                    <div id="qtBed"><span>3</span> <i class="fas fa-bed"></i></div>
+                                    <div id="qtBath"><span>3</span><i class="fas fa-bath"></i></div>
+                                    <div id="qtGarage"><span>3</span><i class="fas fa-car"></i></div>
+                                </div>
+                                <div class="estateBar"></div>
+                               
+                            </div>
+                            <div class="price">Venda:</div>
+                            <div class="priceAmount">R$ </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
+    <script src="assets/js/hjson.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
