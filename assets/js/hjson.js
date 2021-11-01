@@ -151,7 +151,121 @@ let imoveis = [
         banheiros: 2,
         vagasGaragem: 1,
         valor: 550.359
-    }
+    },
+    {
+        ref: 78370,
+        img: "assets/img/imovel5.jpg",
+        tipo: "Terreno",
+        mobiliado: false,
+        cidade: "Lajeado",
+        estado: "RS",
+        localidade: "Conventos",
+        descricao: "- Terrenos de 300m² até 450m²; - Aproximadamente 800m da BR 386;",
+        quartos: 0,
+        banheiros: 0,
+        vagasGaragem: 0,
+        valor: 160.555
+    },
+    {
+        ref: 13041,
+        img: "assets/img/imovel6.jpg",
+        tipo: "Casa",
+        mobiliado: false,
+        cidade: "Lajeado",
+        estado: "RS",
+        localidade: "Conventos",
+        descricao: "Casa com dois dormitórios e amplo pátio localizada a 600 metros da Av. Benjamin Constant em Convento...",
+        quartos: 2,
+        banheiros: 1,
+        vagasGaragem: 1,
+        valor: 190.435
+    },
+    {
+        ref: 6719,
+        img: "assets/img/imovel7.jpg",
+        tipo: "Sobrado",
+        mobiliado: false,
+        cidade: "Lajeado",
+        estado: "RS",
+        localidade: "Moinhos",
+        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        quartos: 3,
+        banheiros: 3,
+        vagasGaragem: 2,
+        valor: 773.888
+    },
+    {
+        ref: 4561,
+        img: "assets/img/imovel8.jpg",
+        tipo: "Apartamento",
+        mobiliado: true,
+        cidade: "Lajeado",
+        estado: "RS",
+        localidade: "Moinhos",
+        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        quartos: 3,
+        banheiros: 3,
+        vagasGaragem: 2,
+        valor: 773.888
+    },
+    {
+        ref: 6719,
+        img: "assets/img/imovel9.jpg",
+        tipo: "Sobrado",
+        mobiliado: false,
+        cidade: "Lajeado",
+        estado: "RS",
+        localidade: "Moinhos",
+        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        quartos: 3,
+        banheiros: 3,
+        vagasGaragem: 2,
+        valor: 773.888
+    },
+    {
+        ref: 6719,
+        img: "assets/img/imovel10.jpg",
+        tipo: "Sobrado",
+        mobiliado: false,
+        cidade: "Lajeado",
+        estado: "RS",
+        localidade: "Moinhos",
+        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        quartos: 3,
+        banheiros: 3,
+        vagasGaragem: 2,
+        valor: 773.888
+    },
+    {
+        ref: 6719,
+        img: "assets/img/imovel10.jpg",
+        tipo: "Sobrado",
+        mobiliado: false,
+        cidade: "Lajeado",
+        estado: "RS",
+        localidade: "Moinhos",
+        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        quartos: 3,
+        banheiros: 3,
+        vagasGaragem: 2,
+        valor: 773.888
+    },
+    {
+        ref: 6719,
+        img: "assets/img/imovel10.jpg",
+        tipo: "Sobrado",
+        mobiliado: false,
+        cidade: "Lajeado",
+        estado: "RS",
+        localidade: "Moinhos",
+        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        quartos: 3,
+        banheiros: 3,
+        vagasGaragem: 2,
+        valor: 773.888
+    },
+
+    
 
 ]
 
@@ -159,7 +273,7 @@ let imoveis = [
 let aluguel = [
     {
         ref: 42088,
-        img: "assets/img/imovel5.jpg",
+        img: "assets/img/aluguel1.jpg",
         tipo: "Apartamento",
         mobiliado: true,
         cidade: "Estrela",
@@ -173,7 +287,7 @@ let aluguel = [
     },
     {
         ref: 42088,
-        img: "assets/img/imovel6.jpg",
+        img: "assets/img/aluguel2.jpg",
         tipo: "Apartamento",
         mobiliado: true,
         cidade: "Estrela",
@@ -183,11 +297,11 @@ let aluguel = [
         quartos: 3,
         banheiros: 2,
         vagasGaragem: 1,
-        valor: 550.359
+        valor:890.359
     },
     {
         ref: 42088,
-        img: "assets/img/imovel7.jpg",
+        img: "assets/img/aluguel3.jpg",
         tipo: "Apartamento",
         mobiliado: true,
         cidade: "Estrela",
@@ -197,11 +311,11 @@ let aluguel = [
         quartos: 3,
         banheiros: 2,
         vagasGaragem: 1,
-        valor: 550.359
+        valor: 310.359
     },
     {
         ref: 42088,
-        img: "assets/img/imovel8.jpg",
+        img: "assets/img/aluguel4.jpg",
         tipo: "Apartamento",
         mobiliado: true,
         cidade: "Estrela",
@@ -211,7 +325,7 @@ let aluguel = [
         quartos: 3,
         banheiros: 2,
         vagasGaragem: 1,
-        valor: 550.359
+        valor: 420.359
     },
 
 

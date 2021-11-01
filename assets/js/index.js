@@ -45,36 +45,35 @@ let cs = (cs)=> document.querySelectorAll(cs);
 (
     function showEstates(){
         let estate = c('div.estates--content');
-        imoveis.map((item)=>{
+        for(let i= 0 ; i<4;i++){
             let estateModel = c('div#estate').cloneNode(true);
             estateModel.classList.remove("model");
-            estateModel.querySelector("img").src = item.img;
-            estateModel.querySelector(".tipo").textContent = item.tipo;
-            if(!item.mobiliado){
+            estateModel.querySelector("img").src = imoveis[i].img;
+            estateModel.querySelector(".tipo").textContent = imoveis[i].tipo;
+            if(!imoveis[i].mobiliado){
                 estateModel.querySelector(".mobiliado").style.display ="none";
             }
             estateModel.querySelector(".mobiliado").textContent = "Mobiliado";
-            estateModel.querySelector(".estado").textContent = item.estado + " - " + item.cidade;
-            estateModel.querySelector(".estate-content .localidade").textContent = item.localidade;
-            estateModel.querySelector(".estate-content .descricao").textContent = item.descricao.substring(0, 100);
-            estateModel.querySelector("#qtBed span").textContent = item.quartos ;
-            estateModel.querySelector("#qtBath span").textContent = item.banheiros ;
-            estateModel.querySelector("#qtGarage span").textContent = item.vagasGaragem ;
-            let valor = parseFloat(item.valor);
+            estateModel.querySelector(".estado").textContent = imoveis[i].estado + " - " + imoveis[i].cidade;
+            estateModel.querySelector(".estate-content .localidade").textContent = imoveis[i].localidade;
+            estateModel.querySelector(".estate-content .descricao").textContent = imoveis[i].descricao.substring(0, 100);
+            estateModel.querySelector("#qtBed span").textContent = imoveis[i].quartos ;
+            estateModel.querySelector("#qtBath span").textContent = imoveis[i].banheiros ;
+            estateModel.querySelector("#qtGarage span").textContent = imoveis[i].vagasGaragem ;
+            let valor = parseFloat(imoveis[i].valor);
             estateModel.querySelector(".priceAmount").textContent += valor;
             
 
 
             estate.append(estateModel);
             
-        })
+        }
     }
 )();
 
 (
     function showRents(){
         let rent = c('div.rent--content');
-        console.log(rent)
         aluguel.map((item)=>{
             let rentModel = c('div#rent').cloneNode(true);
             rentModel.classList.remove("model");
@@ -99,4 +98,22 @@ let cs = (cs)=> document.querySelectorAll(cs);
             
         })
     }
-)()
+)();
+
+
+(
+    function selectBtn(){
+        let btns = cs("label.btn");
+        for(let i=0;i<btns.length;i++){
+            btns[i].addEventListener("click", choseBtn);
+        }
+    }
+)();
+function choseBtn(e){
+    c("label.selected").classList.remove("selected")
+    
+    e.target.classList.add("selected");
+   
+    
+    
+}
