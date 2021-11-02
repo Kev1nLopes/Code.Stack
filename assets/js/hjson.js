@@ -1,4 +1,4 @@
-let cidade = [
+let city = [
     {
         value: "arroio-do-meio,rs",
         name: "Arroio do Meio",
@@ -41,54 +41,54 @@ let cidade = [
     }
 ]
 
-let tipo = [
+let type = [
     {
         value:"apartamento",
-        tipo:"Apartamento"
+        type:"Apartamento"
     },
     {
         value: "box",
-        tipo: "Box"
+        type: "Box"
     },
     {
         value: "casa",
-        tipo: "Casa",
+        type: "Casa",
     },
     {
         value:"casa-comercial",
-        tipo:"Casa de Condominio"
+        type:"Casa de Condominio"
     },
     {
         value:"chacara",
-        tipo:"Chacara"
+        type:"Chacara"
     },
     {
         value:"cobertura",
-        tipo:"Cobertura"
+        type:"Cobertura"
     },
     {
         value:"duplex",
-        tipo:"Duplex"
+        type:"Duplex"
     },
     {
         value:"Geminado",
-        tipo:"geminado"
+        type:"geminado"
     },
     {
         value:"kitnet",
-        tipo:"Kitnet"
+        type:"Kitnet"
     },
     {
         value:"loft",
-        tipo:"Loft"
+        type:"Loft"
     },
     {
         value:"loja",
-        tipo: "Loja"
+        type: "Loja"
     },
     {
         value:"pavilhao",
-        tipo:"Pavilhao"
+        type:"Pavilhao"
     }
 
 ]
@@ -99,170 +99,170 @@ let imoveis = [
     {
         ref: 988979,
         img: "assets/img/imovel1.jpg",
-        tipo: "Apartamento",
-        mobiliado: true,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Centro",
-        descricao: "Lindo apartamento de 3 dormitórios, localizado no bairro Centro! - Cozinha separada; - Móveis proje..",
-        quartos: 3,
-        banheiros: 2,
-        vagasGaragem: 1,
-        valor: 334.155
+        type: "Apartamento",
+        furnished: true,
+        city: "Lajeado",
+        state: "RS",
+        location: "Centro",
+        description: "Lindo apartamento de 3 dormitórios, localizado no bairro Centro! - Cozinha separada; - Móveis proje..",
+        bedrooms: 3,
+        bathrooms: 2,
+        parking: 1,
+        value: 334.155
     },
     {
         ref: 60355,
         img: "assets/img/imovel2.jpg",
-        tipo: "Apartamento",
-        mobiliado: false,
-        cidade: "Arroio do Meio",
-        estado: "RS",
-        localidade: "São Cristóvão",
-        descricao: "Ótima localização, próximo a UNIVATES Excelente para investimento Sacada com churrasqueira Possib...",
-        quartos: 1,
-        banheiros: 1,
-        vagasGaragem: 1,
-        valor: 186.359
+        type: "Apartamento",
+        furnished: false,
+        city: "Arroio do Meio",
+        state: "RS",
+        location: "São Cristóvão",
+        description: "Ótima localização, próximo a UNIVATES Excelente para investimento Sacada com churrasqueira Possib...",
+        bedrooms: 1,
+        bathrooms: 1,
+        parking: 1,
+        value: 186.359
     },
     {
         ref: 3109,
         img: "assets/img/imovel3.jpg",
-        tipo: "Apartamento",
-        mobiliado: false,
-        cidade: "Capão de Canoa",
-        estado: "RS",
-        localidade: "Americano",
-        descricao: "Venha conhecer este belíssimo empreendimento e apaixone-se!.",
-        quartos: 3,
-        banheiros: 2,
-        vagasGaragem: 1,
-        valor: 949.559
+        type: "Apartamento",
+        furnished: false,
+        city: "Capão de Canoa",
+        state: "RS",
+        location: "Americano",
+        description: "Venha conhecer este belíssimo empreendimento e apaixone-se!.",
+        bedrooms: 3,
+        bathrooms: 2,
+        parking: 1,
+        value: 949.559
     },
     {
         ref: 42088,
         img: "assets/img/imovel4.jpg",
-        tipo: "Apartamento",
-        mobiliado: true,
-        cidade: "Estrela",
-        estado: "RS",
-        localidade: "Americano",
-        descricao: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da cidade,...",
-        quartos: 3,
-        banheiros: 2,
-        vagasGaragem: 1,
-        valor: 550.359
+        type: "Apartamento",
+        furnished: true,
+        city: "Estrela",
+        state: "RS",
+        location: "Americano",
+        description: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da city,...",
+        bedrooms: 3,
+        bathrooms: 2,
+        parking: 1,
+        value: 550.359
     },
     {
         ref: 78370,
         img: "assets/img/imovel5.jpg",
-        tipo: "Terreno",
-        mobiliado: false,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Conventos",
-        descricao: "- Terrenos de 300m² até 450m²; - Aproximadamente 800m da BR 386;",
-        quartos: 0,
-        banheiros: 0,
-        vagasGaragem: 0,
-        valor: 160.555
+        type: "Terreno",
+        furnished: false,
+        city: "Lajeado",
+        state: "RS",
+        location: "Conventos",
+        description: "- Terrenos de 300m² até 450m²; - Aproximadamente 800m da BR 386;",
+        bedrooms: 0,
+        bathrooms: 0,
+        parking: 0,
+        value: 160.555
     },
     {
         ref: 13041,
         img: "assets/img/imovel6.jpg",
-        tipo: "Casa",
-        mobiliado: false,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Conventos",
-        descricao: "Casa com dois dormitórios e amplo pátio localizada a 600 metros da Av. Benjamin Constant em Convento...",
-        quartos: 2,
-        banheiros: 1,
-        vagasGaragem: 1,
-        valor: 190.435
+        type: "Casa",
+        furnished: false,
+        city: "Lajeado",
+        state: "RS",
+        location: "Conventos",
+        description: "Casa com dois dormitórios e amplo pátio localizada a 600 metros da Av. Benjamin Constant em Convento...",
+        bedrooms: 2,
+        bathrooms: 1,
+        parking: 1,
+        value: 190.435
     },
     {
         ref: 6719,
         img: "assets/img/imovel7.jpg",
-        tipo: "Sobrado",
-        mobiliado: false,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Moinhos",
-        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
-        quartos: 3,
-        banheiros: 3,
-        vagasGaragem: 2,
-        valor: 773.888
+        type: "Sobrado",
+        furnished: false,
+        city: "Lajeado",
+        state: "RS",
+        location: "Moinhos",
+        description: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: 2,
+        value: 773.888
     },
     {
         ref: 4561,
         img: "assets/img/imovel8.jpg",
-        tipo: "Apartamento",
-        mobiliado: true,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Moinhos",
-        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
-        quartos: 3,
-        banheiros: 3,
-        vagasGaragem: 2,
-        valor: 773.888
+        type: "Apartamento",
+        furnished: true,
+        city: "Lajeado",
+        state: "RS",
+        location: "Moinhos",
+        description: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: 2,
+        value: 773.888
     },
     {
         ref: 6719,
         img: "assets/img/imovel9.jpg",
-        tipo: "Sobrado",
-        mobiliado: false,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Moinhos",
-        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
-        quartos: 3,
-        banheiros: 3,
-        vagasGaragem: 2,
-        valor: 773.888
+        type: "Sobrado",
+        furnished: false,
+        city: "Lajeado",
+        state: "RS",
+        location: "Moinhos",
+        description: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: 2,
+        value: 773.888
     },
     {
         ref: 6719,
         img: "assets/img/imovel10.jpg",
-        tipo: "Sobrado",
-        mobiliado: false,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Moinhos",
-        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
-        quartos: 3,
-        banheiros: 3,
-        vagasGaragem: 2,
-        valor: 773.888
+        type: "Sobrado",
+        furnished: false,
+        city: "Lajeado",
+        state: "RS",
+        location: "Moinhos",
+        description: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: 2,
+        value: 773.888
     },
     {
         ref: 6719,
         img: "assets/img/imovel10.jpg",
-        tipo: "Sobrado",
-        mobiliado: false,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Moinhos",
-        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
-        quartos: 3,
-        banheiros: 3,
-        vagasGaragem: 2,
-        valor: 773.888
+        type: "Sobrado",
+        furnished: false,
+        city: "Lajeado",
+        state: "RS",
+        location: "Moinhos",
+        description: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: 2,
+        value: 773.888
     },
     {
         ref: 6719,
         img: "assets/img/imovel10.jpg",
-        tipo: "Sobrado",
-        mobiliado: false,
-        cidade: "Lajeado",
-        estado: "RS",
-        localidade: "Moinhos",
-        descricao: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
-        quartos: 3,
-        banheiros: 3,
-        vagasGaragem: 2,
-        valor: 773.888
+        type: "Sobrado",
+        furnished: false,
+        city: "Lajeado",
+        state: "RS",
+        location: "Moinhos",
+        description: "Sobrado de 3 dormitórios localizado no bairro Moinhos! - Uma suíte com hidro; - quiosque e piscina...",
+        bedrooms: 3,
+        bathrooms: 3,
+        parking: 2,
+        value: 773.888
     },
 
     
@@ -274,58 +274,58 @@ let aluguel = [
     {
         ref: 42088,
         img: "assets/img/aluguel1.jpg",
-        tipo: "Apartamento",
-        mobiliado: true,
-        cidade: "Estrela",
-        estado: "RS",
-        localidade: "Americano",
-        descricao: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da cidade,...",
-        quartos: 3,
-        banheiros: 2,
-        vagasGaragem: 1,
-        valor: 550.359
+        type: "Apartamento",
+        furnished: true,
+        city: "Estrela",
+        state: "RS",
+        location: "Americano",
+        description: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da city,...",
+        bedrooms: 3,
+        bathrooms: 2,
+        parking: 1,
+        value: 550.359
     },
     {
         ref: 42088,
         img: "assets/img/aluguel2.jpg",
-        tipo: "Apartamento",
-        mobiliado: true,
-        cidade: "Estrela",
-        estado: "RS",
-        localidade: "Americano",
-        descricao: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da cidade,...",
-        quartos: 3,
-        banheiros: 2,
-        vagasGaragem: 1,
-        valor:890.359
+        type: "Apartamento",
+        furnished: true,
+        city: "Estrela",
+        state: "RS",
+        location: "Americano",
+        description: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da city,...",
+        bedrooms: 3,
+        bathrooms: 2,
+        parking: 1,
+        value:890.359
     },
     {
         ref: 42088,
         img: "assets/img/aluguel3.jpg",
-        tipo: "Apartamento",
-        mobiliado: true,
-        cidade: "Estrela",
-        estado: "RS",
-        localidade: "Americano",
-        descricao: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da cidade,...",
-        quartos: 3,
-        banheiros: 2,
-        vagasGaragem: 1,
-        valor: 310.359
+        type: "Apartamento",
+        furnished: true,
+        city: "Estrela",
+        state: "RS",
+        location: "Americano",
+        description: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da city,...",
+        bedrooms: 3,
+        bathrooms: 2,
+        parking: 1,
+        value: 310.359
     },
     {
         ref: 42088,
         img: "assets/img/aluguel4.jpg",
-        tipo: "Apartamento",
-        mobiliado: true,
-        cidade: "Estrela",
-        estado: "RS",
-        localidade: "Americano",
-        descricao: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da cidade,...",
-        quartos: 3,
-        banheiros: 2,
-        vagasGaragem: 1,
-        valor: 420.359
+        type: "Apartamento",
+        furnished: true,
+        city: "Estrela",
+        state: "RS",
+        location: "Americano",
+        description: "Lindo apartamento localizado em excelente bairro, próximo a todos os confortos e acessos da city,...",
+        bedrooms: 3,
+        bathrooms: 2,
+        parking: 1,
+        value: 420.359
     },
 
 

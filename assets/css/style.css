@@ -42,15 +42,15 @@ a:hover{
     z-index: 1;
     top: 0;
 }
-.header--content{
+.header-content{
     display: flex;
-    padding-left: 25px 30px;
+    padding-left: 25px;
     height: 75px;
     justify-content: space-between;
     align-items: center;
   
 }
-.header--content .header-logo img{
+.header-content .header-logo img{
     width: 160px;
     margin: 0px 0px 0px 10px
 }
@@ -116,28 +116,27 @@ nav#sub-services li:hover a{
 /* Main */
 
 /* Slider */
-section.section--main{
+section.section-main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 640px;
 }
-section .slider--content{
+section .slider-content{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     max-height: 439px;
-
     cursor: pointer;
 }
-section .search--area{
+section .search-area{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search--area-content{
+.search-area-content{
     width: inherit;
     height: 181px;
     display: flex;
@@ -146,7 +145,7 @@ section .search--area{
     flex-direction: column;
 }
 
-.search--area-box{
+.search-area-box{
     width: 1340px;
     height: 81px;
     display: flex;
@@ -158,7 +157,7 @@ section .search--area{
 
 
 }
-.search--area-box form{
+.search-area-box form{
     width: inherit;
     padding: 20px;
     
@@ -198,7 +197,7 @@ section .search--area{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
-.auxInputCity{
+.aux-Input-City{
     width: 100%;
     height: 40px;
     background-color: white;
@@ -209,7 +208,7 @@ section .search--area{
     flex-direction: row-reverse;
     
 }
-.auxInputCity input{
+.aux-Input-City input{
     width: 100%;
     height: 40px;
 }
@@ -217,20 +216,20 @@ input:focus{
     outline: none;
 }
 
-.auxInputCity input::-webkit-calendar-picker-indicator {
+.aux-Input-City input::-webkit-calendar-picker-indicator {
     display: none;
  } 
-.auxInputCity datalist#list{
+.aux-Input-City datalist#list{
     background-color: white;
     width: 30px;
 }
-.auxInputCity datalist option{
+.aux-Input-City datalist option{
     background-color: white;
     width: 30px;
 }
  
 
-.auxInputCity select option:hover{
+.aux-Input-City select option:hover{
     background-color: blue;
 }
 
@@ -240,7 +239,7 @@ i.fas.fa-chevron-down{
     right: 10px;
     color: gray;
 }
-.auxInputType {
+.aux-Input-Type {
     width: 100%;
     height: 40px;
     background-color: white;
@@ -251,17 +250,17 @@ i.fas.fa-chevron-down{
     flex-direction: row-reverse;
     
 }
-.auxInputType input{
+.aux-Input-Type input{
     width: 100%;
     height: 40px;
 }
-.auxInputType input::-webkit-calendar-picker-indicator {
+.aux-Input-Type input::-webkit-calendar-picker-indicator {
    display: none;
 } 
 
 
 
-.search--area-content a{
+.search-area-content a{
     color: blue;
     cursor: pointer;
     margin-top: 30px;
@@ -280,53 +279,54 @@ form button{
 
 /* Imoveis a Venda */
 
-section.sellEstate{
+section.sell-estate{
     background-color: #E0E0E0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 0 60px;
 }
 
-.sellEstate--title-area{
+.sell-estate-title-area{
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
 }
-.sellEstate--title{
+.sell-estate-title{
    max-width: 212px;
    width: 100%;
 
 }
-.sellEstate--title h2{
+.sell-estate-title h2{
     width: inherit;
     font-size: 2.3rem;
     padding: 0 0 5px 0;
 }
-.sellEstate--title .bar{
+.sell-estate-title .bar{
     width: inherit;
 }
 
-.sellEstate--title-area a{
+.sell-estate-title-area a{
     font-size: 1.8rem;
     border: 1px solid blue;
     border-radius: 5px;
     padding: 10px 15px;
 }
-.sellEstate--title-area a:hover{
+.sell-estate-title-area a:hover{
     font-size: 1.8rem;
     background-color: blue;
     color: white;
-    transition: 0.5 ease-in-out;
+    transition: 0.5s ease-in-out;
     border-radius: 5px;
     padding: 10px 15px;
 }
 
-.estates--content{
+.estates-content{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
-    gap: 30px;
+    gap: 0 30px;
 }
 .estate{
     max-height: 500px;
@@ -356,7 +356,7 @@ section.sellEstate{
 .estate img:hover{
     cursor: pointer;
 }
-.estate .tipo{
+.estate .type{
     max-width: 43%;
     width: 100%;
     position: absolute;
@@ -368,7 +368,7 @@ section.sellEstate{
     color: white;
  
 }
-.estate .mobiliado{
+.estate .furnished{
     max-width: 43%;
     width: 100%;
     position: absolute;
@@ -380,7 +380,7 @@ section.sellEstate{
     border-top-right-radius: 5px ;
     color: white;
 }
-.estate .estado{
+.estate .state{
     position: absolute;
     top: 35%;
     padding: 3px;
@@ -396,12 +396,12 @@ section.sellEstate{
     padding: 10px;
 
 }
-.estate-content .localidade{
+.estate-content .location{
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.estate-content .descricao{
+.estate-content .description{
     text-align: start;
 }
 .obs-estate{
@@ -410,7 +410,7 @@ section.sellEstate{
     justify-content: center;
     align-items: center;
 }
-.estateBar{
+.estate-bar{
     height: 1px;
     background-color: gray;
     width: 70%;
@@ -430,7 +430,7 @@ section.sellEstate{
     font-size: 18px;
     
 }
-.priceAmount{
+.price-amount{
     align-self: flex-start;
     margin-top: 5px;
     font-weight: bold;
@@ -438,35 +438,34 @@ section.sellEstate{
 
 
 
-.rentEstate--title-area{
+.rent-estate-title-area{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
 }
-.rentEstate--title-area a{
+.rent-estate-title-area a{
     font-size: 1.8rem;
     border: 1px solid blue;
     border-radius: 5px;
     padding: 10px 15px;
 }
-.rentEstate--title-area a:hover{
+.rent-estate-title-area a:hover{
     font-size: 1.8rem;
     background-color: blue;
     color: white;
-    transition: 0.5 ease-in-out;
+    transition: 0.5s ease-in-out;
     border-radius: 5px;
     padding: 10px 15px;
 }
-.rentEstate--title h2{
+.rent-estate-title h2{
     font-size: 2.3rem;
 }
 
-.rent--content{
+.rent-content{
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
-    gap: 30px;
+    display: flex;
+
 }
 
 .rent{
@@ -498,7 +497,7 @@ section.sellEstate{
 .rent img:hover{
     cursor: pointer;
 }
-.rent .tipo{
+.rent .type{
     max-width: 43%;
     width: 100%;
     position: absolute;
@@ -510,7 +509,7 @@ section.sellEstate{
     color: white;
  
 }
-.rent .mobiliado{
+.rent .furnished{
     max-width: 43%;
     width: 100%;
     position: absolute;
@@ -522,7 +521,7 @@ section.sellEstate{
     border-top-right-radius: 5px ;
     color: white;
 }
-.rent .estado{
+.rent .state{
     position: absolute;
     top: 35%;
     padding: 3px;
@@ -531,19 +530,25 @@ section.sellEstate{
     margin-left: 10px;
 }
 .rent-content{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+    gap: 30px;
+
+}
+.rent-about{
     margin-top: 20px ;
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     padding: 10px;
-
 }
-.rent-content .localidade{
+.rent-about .location{
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
-.rent-content .descricao{
+.rent-about .description{
     text-align: start;
 }
 .obs-rent{
@@ -552,7 +557,7 @@ section.sellEstate{
     justify-content: center;
     align-items: center;
 }
-.rentBar{
+.rent-bar{
     height: 1px;
     background-color: gray;
     width: 70%;
@@ -583,16 +588,16 @@ section.sellEstate{
 
 
 
-.posts--title-area{
+.posts-title-area{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
 }
-.posts--title h2{
+.posts-title h2{
     font-size: 2.3rem;
 }
-.posts--content{
+.posts-content{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -616,13 +621,13 @@ section.sellEstate{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.post--title{
+.post-title{
     text-transform: uppercase;
     font-size: 2.3rem;
     padding: 10px;
     color: blue ;
 }
-.post--desc{
+.post-desc{
     font-size: 1.6rem;
     padding: 0 10px;
 }
@@ -642,51 +647,51 @@ section.sellEstate{
     display: flex;
     justify-content: center;
 }
-.footerBar{
+.footer-bar{
     height: 3px;
     background-color: #FFCC00;
     width: 100%;
 }
-.footer--content{
+.footer-content{
     margin-top: 10px;
 }
-.footer--content .local{
+.footer-content .local{
     font-size: 1.8rem;
     font-weight: bold;
     color: gray;
 }
-.endereco{
+.adress{
     padding: 5px 15px;
     font-size: 1.6rem;
 
 }
-.endereco--title{
+.adress-title{
     font-size: 1.8rem;
     font-weight: bold;
     padding: 10px 0;
 }
-.atendimento{
+.attendance{
     padding: 5px 15px;
     font-size: 1.6rem;
 }
 
-.atendimento--title{
+.attendance-title{
     font-size: 1.8rem;
     font-weight: bold;
     padding: 10px 0;
 }
-.telefones{
+.phones{
     padding: 5px 15px;
     font-size: 1.6rem;
 }
-.telefones--title{
+.phones-title{
     font-size: 1.8rem;
     font-weight: bold;
 }
-.tipo-telefone{
+.type-phones{
     color: gray;
     padding: 5px;
 }
-.telefones a{
+.phones a{
     color: blue;
 }

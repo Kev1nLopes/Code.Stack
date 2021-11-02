@@ -19,8 +19,8 @@
 </head>
 <body>
     
-        <header class="header ">
-                <div class="header--content container">  
+        <header class="header">
+                <div class="header-content container">  
                              
                     <div class="header-logo">
                         <a href=""><img src="assets/img/pedo-logo.jpg" alt="pedo-logo"></a>
@@ -55,19 +55,19 @@
         </header>
     </div>
     <main>
-        <section class="section--main">
-            <div class="slider--content container">
+        <section class="section-main">
+            <div class="slider-content container">
                 <img src="assets/img/alugueaqui.png" alt="alugueaqui">
             </div>  
-            <div class="search--area container">
-                <div class="search--area-content">
-                    <div class="search--area-box">
+            <div class="search-area container">
+                <div class="search-area-content">
+                    <div class="search-area-box">
                         <form method="POST" action="receber.php">
                             <div class="form-btns">
                                 <label for="sell" id="sell" class="btn selected">Venda</label>
                                 <label for="location" id="location" class="btn">Locação</label>
                             </div>
-                            <div class="auxInputCity">
+                            <div class="aux-Input-City">
                                 <i class="fas fa-chevron-down"></i>
                                 <input  autocomplete="off" list="cidades" placeholder="Cidade:">
                                 <datalist id="citys" role="listbox" list="cidades">
@@ -78,7 +78,7 @@
                                 </datalist>
                                 
                             </div>
-                            <div class="auxInputType">
+                            <div class="aux-Input-Type">
                                 <i class="fas fa-chevron-down"></i>
                                 
                                 <input type="text" list="opções" placeholder="Tipo">
@@ -97,11 +97,10 @@
             </div>
 
         </section>
-
-        <section class="sellEstate">
-            <div class="sellEstate--content container">
-                <div class="sellEstate--title-area">
-                    <div class="sellEstate--title">
+        <section class="sell-estate">
+            <div class="sell-estate-content container">
+                <div class="sell-estate-title-area">
+                    <div class="sell-estate-title">
                         <h2>Imóveis à Venda
                         <div class="bar"></div>
                         </h2>
@@ -109,33 +108,35 @@
                     <a href="#">Ver mais</a>
                     
                 </div>
-                <div class="estates--content">
+                <div class="estates-content">
                     <div class="estate model" id="estate" >
                         <img src="assets/img/imovel1.jpg" alt="imovel1">
-                        <div class="tipo">Apartamento</div>
-                        <div class="mobiliado"></div>
-                        <div class="estado">RS - Lajeado</div>
+                        <div class="type">Apartamento</div>
+                        <div class="furnished"></div>
+                        <div class="state">RS - Lajeado</div>
                         <div class="estate-content">
-                            <div class="localidade">Sao Cristovao</div>
-                            <p class="descricao">São Cristóvão: o imóvel ideal para quem deseja morar e investir. Localizado em área nobre da cidade... </p>
+                            <div class="location">Sao Cristovao</div>
+                            <p class="description">São Cristóvão: o imóvel ideal para quem deseja morar e investir. Localizado em área nobre da cidade... </p>
                             <div class="obs-estate">
-                                <div class="estateBar"></div>
+                                <div class="estate-bar"></div>
                                 <div class="obs-estate-content">
-                                    <div id="qtBed"><span>3</span> <i class="fas fa-bed"></i></div>
-                                    <div id="qtBath"><span>3</span><i class="fas fa-bath"></i></div>
-                                    <div id="qtGarage"><span>3</span><i class="fas fa-car"></i></div>
+                                    <div id="qt-bed"><span>3</span> <i class="fas fa-bed"></i></div>
+                                    <div id="qt-bath"><span>3</span><i class="fas fa-bath"></i></div>
+                                    <div id="qt-garage"><span>3</span><i class="fas fa-car"></i></div>
                                 </div>
-                                <div class="estateBar"></div>
+                                <div class="estate-bar"></div>
                                
                             </div>
                             <div class="price">Venda:</div>
-                            <div class="priceAmount">R$ </div>
+                            <div class="price-amount">R$ </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="rentEstate--title-area">
-                    <div class="rentEstate--title">
+            </div>
+            <div class="rent-estate-content container">
+                <div class="rent-estate-title-area">
+                    <div class="rent-estate-title">
                         <h2>Imóveis para Alugar
                         <div class="bar"></div>
                         </h2>
@@ -143,89 +144,88 @@
                     <a href="#">Ver mais</a>
                     
                 </div>
-                <div class="rent--content">
+                <div class="rent-content">
                     <div class="rent model" id="rent" >
                         <img src="assets/img/imovel1.jpg" alt="imovel1">
-                        <div class="tipo">Apartamento</div>
-                        <div class="mobiliado">Mobiliado</div>
-                        <div class="estado">RS - Lajeado</div>
-                        <div class="rent-content">
-                            <div class="localidade">Sao Cristovao</div>
-                            <p class="descricao">São Cristóvão: o imóvel ideal para quem deseja morar e investir. Localizado em área nobre da cidade... </p>
-                            <div class="obs-estate">
-                                <div class="estateBar"></div>
-                                <div class="obs-estate-content">
-                                    <div id="qtBed"><span>3</span> <i class="fas fa-bed"></i></div>
-                                    <div id="qtBath"><span>3</span><i class="fas fa-bath"></i></div>
-                                    <div id="qtGarage"><span>3</span><i class="fas fa-car"></i></div>
+                        <div class="type">Apartamento</div>
+                        <div class="furnished">Mobiliado</div>
+                        <div class="state">RS - Lajeado</div>
+                        <div class="rent-about">
+                            <div class="location">Sao Cristovao</div>
+                            <p class="description">São Cristóvão: o imóvel ideal para quem deseja morar e investir. Localizado em área nobre da cidade... </p>
+                            <div class="obs-rent">
+                                <div class="rent-bar"></div>
+                                <div class="obs-rent-content">
+                                    <div id="qt-bed"><span>3</span> <i class="fas fa-bed"></i></div>
+                                    <div id="qt-bath"><span>3</span><i class="fas fa-bath"></i></div>
+                                    <div id="qt-garage"><span>3</span><i class="fas fa-car"></i></div>
                                 </div>
-                                <div class="estateBar"></div>
+                                <div class="rent-bar"></div>
                                
                             </div>
                             <div class="price">Venda:</div>
-                            <div class="priceAmount">R$ </div>
+                            <div class="price-amount">R$ </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="posts--title-area">
-                    <div class="posts--title">
+                <div class="posts-title-area">
+                    <div class="posts-title">
                         <h2>Posts em Destaque
                         <div class="bar"></div>
                         </h2>
                     </div>
                     
                 </div>
-                <div class="posts--content">
+                <div class="posts-content">
                     <div class="post" id="post">
                         <img src="assets/img/post1.jpg" alt="">
-                        <div class="post--title">
+                        <div class="post-title">
                             <a href="">
                                 como escolher a sala ideal para o seu negocio?
                             </a>
                             
                         </div>
-                        <div class="post--desc">
+                        <div class="post-desc">
                             Olá,Tudo bem com você? Hoje, vamos conversar com os nossos clientes que tem o espírito empreendedor, isso mesmo, para aqueles que respiram negócio, que já tem o seu ou que querem abrir nesse ano....
                         </div>
                         <div class="post-time">há 8 meses</div>
                     </div>
                     <div class="post" id="post">
                         <img src="assets/img/post2.png" alt="">
-                        <div class="post--title">
+                        <div class="post-title">
                            <a href="">O que é Casa Verde e Amarela?</a> 
                         </div>
-                        <div class="post--desc">
+                        <div class="post-desc">
                             Olá,Tudo bem com você? Hoje, vamos conversar com os nossos clientes que tem o espírito empreendedor, isso mesmo, para aqueles que respiram negócio, que já tem o seu ou que querem abrir nesse ano....
                         </div>
                         <div class="post-time">há 8 meses</div>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
     <footer>
-        <div class="footerBar"></div>
+        <div class="footer-bar"></div>
         <div class="footer">
-            <div class="footer--content container">
+            <div class="footer-content container">
                 
                 <div class="local"><i class="fas fa-map-marker-alt"></i>Pedó Imóveis</div>
-                <div class="endereco">
-                    <div class="endereco--title">Endereço</div>
+                <div class="adress">
+                    <div class="adress-title">Endereço</div>
                     <p>Lajeado - RS <br/> Av Benjamin Constant, 1737, Florestal <br/> Loja 01 <br/> 95900-700</p>
                 </div>
-                <div class="atendimento">
-                    <div class="atendimento--title">Horário de atendimento</div>
+                <div class="attendance">
+                    <div class="attendace-title">Horário de atendimento</div>
                     <p>Segunda a quinta-feira 8:00 às 18:30 | Sexta Feita 8:00 <br/> às 18:00 | Sábado: 8:30 às 12:00</p>
                 </div>
-                <div class="telefones">
-                    <div class="telefones--title">Telefones</div>
-                    <div class="tipo-telefone">Venda</div>
+                <div class="phones">
+                    <div class="phones-title">Telefones</div>
+                    <div class="type-phones">Venda</div>
                     <a href="https://api.whatsapp.com/send?phone=+5551983290600"> (51) 98329-0600 </a>
-                    <div class="tipo-telefone">Aluguel</div>
+                    <div class="type-phones">Aluguel</div>
                     <a href="https://api.whatsapp.com/send?phone=+5551981686400"> (51) 98329-0600 </a>
-                    <div class="tipo-telefone">Outros</div>
+                    <div class="type-phones">Outros</div>
                     <a href="https://api.whatsapp.com/send?phone=+555137298505"> (51) 98329-0600 </a>
                 </div>
             </div>

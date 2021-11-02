@@ -44,24 +44,24 @@ let cs = (cs)=> document.querySelectorAll(cs);
 
 (
     function showEstates(){
-        let estate = c('div.estates--content');
+        let estate = c('div.estates-content');
         for(let i= 0 ; i<4;i++){
             let estateModel = c('div#estate').cloneNode(true);
             estateModel.classList.remove("model");
             estateModel.querySelector("img").src = imoveis[i].img;
-            estateModel.querySelector(".tipo").textContent = imoveis[i].tipo;
-            if(!imoveis[i].mobiliado){
-                estateModel.querySelector(".mobiliado").style.display ="none";
+            estateModel.querySelector(".type").textContent = imoveis[i].type;
+            if(!imoveis[i].furnished){
+                estateModel.querySelector(".furnished").style.display ="none";
             }
-            estateModel.querySelector(".mobiliado").textContent = "Mobiliado";
-            estateModel.querySelector(".estado").textContent = imoveis[i].estado + " - " + imoveis[i].cidade;
-            estateModel.querySelector(".estate-content .localidade").textContent = imoveis[i].localidade;
-            estateModel.querySelector(".estate-content .descricao").textContent = imoveis[i].descricao.substring(0, 100);
-            estateModel.querySelector("#qtBed span").textContent = imoveis[i].quartos ;
-            estateModel.querySelector("#qtBath span").textContent = imoveis[i].banheiros ;
-            estateModel.querySelector("#qtGarage span").textContent = imoveis[i].vagasGaragem ;
-            let valor = parseFloat(imoveis[i].valor);
-            estateModel.querySelector(".priceAmount").textContent += valor;
+            estateModel.querySelector(".furnished").textContent = "Mobiliado";
+            estateModel.querySelector(".state").textContent = imoveis[i].state + " - " + imoveis[i].city;
+            estateModel.querySelector(".estate-content .location").textContent = imoveis[i].location;
+            estateModel.querySelector(".estate-content .description").textContent = imoveis[i].description.substring(0, 100);
+            estateModel.querySelector("#qt-bed span").textContent = imoveis[i].bedrooms ;
+            estateModel.querySelector("#qt-bath span").textContent = imoveis[i].bathrooms ;
+            estateModel.querySelector("#qt-garage span").textContent = imoveis[i].parking ;
+            let valor = parseFloat(imoveis[i].value);
+            estateModel.querySelector(".price-amount").textContent += valor;
             
 
 
@@ -73,24 +73,24 @@ let cs = (cs)=> document.querySelectorAll(cs);
 
 (
     function showRents(){
-        let rent = c('div.rent--content');
+        let rent = c('div.rent-content');
         aluguel.map((item)=>{
             let rentModel = c('div#rent').cloneNode(true);
             rentModel.classList.remove("model");
             rentModel.querySelector("img").src = item.img;
-            rentModel.querySelector(".tipo").textContent = item.tipo;
-            if(!item.mobiliado){
-                rentModel.querySelector(".mobiliado").style.display ="none";
+            rentModel.querySelector(".type").textContent = item.type;
+            if(!item.furnished){
+                rentModel.querySelector(".furnished").style.display ="none";
             }
-            rentModel.querySelector(".rent .mobiliado").textContent = "Mobiliado";
-            rentModel.querySelector(".rent .estado").textContent = item.estado + " - " + item.cidade;
-            rentModel.querySelector(".rent-content .localidade").textContent = item.localidade;
-            rentModel.querySelector(".rent-content .descricao").textContent = item.descricao.substring(0, 100);
-            rentModel.querySelector("#qtBed span").textContent = item.quartos ;
-            rentModel.querySelector("#qtBath span").textContent = item.banheiros ;
-            rentModel.querySelector("#qtGarage span").textContent = item.vagasGaragem ;
-            let valor = parseFloat(item.valor);
-            rentModel.querySelector(".priceAmount").textContent += valor;
+            rentModel.querySelector(".rent .furnished").textContent = "Mobiliado";
+            rentModel.querySelector(".rent .state").textContent = item.state + " - " + item.city;
+            rentModel.querySelector(".rent-about .location").textContent = item.location;
+            rentModel.querySelector(".rent-about .description").textContent = item.description.substring(0, 100);
+            rentModel.querySelector("#qt-bed span").textContent = item.bedrooms ;
+            rentModel.querySelector("#qt-bath span").textContent = item.bathrooms ;
+            rentModel.querySelector("#qt-garage span").textContent = item.parking ;
+            let valor = parseFloat(item.value);
+            rentModel.querySelector(".price-amount").textContent += valor;
             
 
 
