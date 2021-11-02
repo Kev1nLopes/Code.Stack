@@ -609,15 +609,20 @@ section.sell-estate{
 .posts-title h2{
     font-size: 2.3rem;
 }
+.posts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .posts-content{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32vw, 1fr));
     gap: 30px;
     padding: 20px;
 }
 .post{
-    
     max-height: 600px;
     height: 100%;
     background-color: white;
