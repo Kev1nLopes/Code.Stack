@@ -161,9 +161,9 @@ let imoveis = [
         state: "RS",
         location: "Conventos",
         description: "- Terrenos de 300m² até 450m²; - Aproximadamente 800m da BR 386;",
-        bedrooms: 0,
-        bathrooms: 0,
-        parking: 0,
+        bedrooms: 1,
+        bathrooms: 2,
+        parking: 1,
         value: 160.555
     },
     {
@@ -192,7 +192,7 @@ let imoveis = [
         bedrooms: 3,
         bathrooms: 3,
         parking: 2,
-        value: 773.888
+        value: 452.508
     },
     {
         ref: 4561,
@@ -206,7 +206,7 @@ let imoveis = [
         bedrooms: 3,
         bathrooms: 3,
         parking: 2,
-        value: 773.888
+        value: 320.109
     },
     {
         ref: 6719,
@@ -220,7 +220,7 @@ let imoveis = [
         bedrooms: 3,
         bathrooms: 3,
         parking: 2,
-        value: 773.888
+        value: 910.003
     },
     {
         ref: 6719,
@@ -234,7 +234,7 @@ let imoveis = [
         bedrooms: 3,
         bathrooms: 3,
         parking: 2,
-        value: 773.888
+        value: 1003.555
     },
     {
         ref: 6719,
@@ -248,11 +248,11 @@ let imoveis = [
         bedrooms: 3,
         bathrooms: 3,
         parking: 2,
-        value: 773.888
+        value: 703.555
     },
     {
         ref: 6719,
-        img: "assets/img/imovel10.jpg",
+        img: "assets/img/imovel11.jpg",
         type: "Sobrado",
         furnished: false,
         city: "Lajeado",
@@ -262,7 +262,7 @@ let imoveis = [
         bedrooms: 3,
         bathrooms: 3,
         parking: 2,
-        value: 773.888
+        value: 150.333
     },
 
     

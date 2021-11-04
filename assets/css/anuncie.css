@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    justify-content: center;
+
+}
+.advertise{
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advertise-title{
+    max-width: 200px;
+    width: 100%;
+    align-self: flex-start;
+}
+.advertise-title-text{
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.advertise-content form{
+    display: grid;
+    grid-template-columns: 1fr repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-areas: 
+    "nome nome email email phone phone"
+    "message message message message message message"
+    ;
+
+    
+}
+#input-nome{
+    grid-area: nome;
+}
+#input-email{
+    grid-area: email;
+}
+#input-phone{
+    grid-area: phone;
+}
+#textarea-message{
+    grid-area: message;
+}
