@@ -7,13 +7,21 @@
     <title>Anuncie seu imóvel</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/anuncie.css">
+
+     <!-- Fontes -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+    </style>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/d50e3b900c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <div class="header-content container">  
                      
             <div class="header-logo">
-                <a href=""><img src="../img/pedo-logo.jpg" alt="pedo-logo"></a>
+                <a href="../../index.html"><img src="../img/pedo-logo.jpg" alt="pedo-logo"></a>
             </div>
             
             <nav class="header-menu">
@@ -58,20 +66,39 @@
                 </div>
                 <div class="advertise-content">
                     <form method="POST" action="../php/adicionar.php">
-                        <label for="name">Nome:
-                        <input type="text" name="name" id="input-nome">
-                        </label>
-                        <label for="email">E-mail:
-                        <input type="email" name="email" id="input-email">
-                        </label>
-                        <label for="phone">Telefone:
-                        <input type="tel" name="phone" id="input-phone">
-                        </label>
-                        <label for="message">Mensagem:
-                        <textarea name="message" id="textarea-message" cols="30" rows="10"></textarea>
-                        </label>
-                        <input type="submit" value="Enviar">
+                        <div class="grid-form">
+                            <div id="input-nome">
+                                <label for="name">Nome:<br/>
+                                    <input type="text" name="name">
+                                </label>
+                            </div>
+                            <div id="input-email">
+                                <label for="email">E-mail:<br/>
+                                    <input type="email" name="email">
+                                </label>
+                            </div>
+                            <div id="input-phone">
+                                <label for="phone">Telefone:<br/>
+                                    <input type="tel" name="phone" id="input-phone">
+                                </label>
+                            </div>
+                            <div id="textarea-message">
+                                <label for="message">Mensagem
+                                    <textarea name="message" id="textarea-message" cols="30" rows="10" placeholder="Descreva seu imóvel"></textarea>
+                                </label>
+                            </div>
+                            <div class="terms">
+                                Ao clicar em enviar você está de acordo com nossos <a href="#">Termos de Uso</a> e <a href="">Política de Privacidade</a>
+                            </div>
+                            <div class="btn-enviar">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </div>
+                        
+                        
+                       
                     </form>
+                    
                 </div>
             </div>
         </section>

@@ -8,35 +8,88 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 80px;
 }
 .advertise-title{
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
+
     align-self: flex-start;
+    
 }
 .advertise-title-text{
     font-size: 2.3rem;
     font-family: 'Montserrat', sans-serif;
 }
-.advertise-content form{
+.advertise-content{
+    width: 90%;
+ 
+    margin-top: 30px;
+}
+.advertise-content .grid-form{
+    position: relative;
+    width: 100%;
+    gap: 20px;
     display: grid;
-    grid-template-columns: 1fr repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
     grid-template-areas: 
-    "nome nome email email phone phone"
-    "message message message message message message"
+    "nome email phone"
+    "textarea textarea textarea"
+    "terms terms . "
+    "btn btn btn "
     ;
-
     
+
+
+}
+.advertise-content form input{
+    outline: none;
+    width: 100%;
+    height: 30px;
+}
+.advertise-content form input:focus{
+    border: 3px solid blue;
 }
 #input-nome{
     grid-area: nome;
 }
 #input-email{
+    
     grid-area: email;
 }
 #input-phone{
-    grid-area: phone;
+  
+   grid-area: phone;
 }
 #textarea-message{
-    grid-area: message;
+    grid-area: textarea;
+    width: 100%;
+}
+#textarea-message textarea{
+    resize: none;
+    outline: none;
+}
+#textarea-message textarea:focus{
+    border: 3px solid blue;
+}
+.terms{
+    width: inherit;
+    grid-area: terms;
+}
+.terms a {
+    color: blue;
+    cursor: pointer;
+}
+.btn-enviar{
+    grid-area: btn;
+    height: 30px;
+}
+.btn-enviar input{
+    width: 100%;
+    height: 30px;
+    padding: 0 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
 }
